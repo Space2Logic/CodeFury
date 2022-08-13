@@ -8,11 +8,30 @@
     </head>
 <body>
     <h1>Hello,What is your name ?</h1>
-    <input>
+    <input id="name">
     <br> <br>
-    <button> Submit</button>
+    <button onclick="myFunction()"> Submit</button>
+    <p>Portfolio Maker</p> 
+    <h1 id="message"></h1> <br> <br>
+    <h1 id="message2"></h1>
     <style>
         body{background-color: darkorchid; text-align: center;color: floralwhite;}
     </style>
+    
+
+    <script>
+        function myFunction(){
+            let name = document.querySelector("#name"); 
+            
+            let message = document.querySelector("#message");
+            let message2 = document.querySelector("#message2");
+
+
+            message.innerHTML = "Portfolio Maker" + "\n " + name.value;
+            message2.innerHTML = "Portfolio Maker" + "\n " + name.value;
+
+        }
+
+    </script>
 </body>
 
