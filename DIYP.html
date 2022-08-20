@@ -4,16 +4,28 @@
         <meta charset=""UTF-8">
         <meta http-equiv=""X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hello Name</title>
+        <title>Portfolio Maker</title>
     </head>
 <body>
-    <h1>Hello,What is your name ?</h1>
-    <input id="name">
+    <h1>Portfolio Maker</h1>
+   <p>Enter your name: </p> <input id="name"><br>
+   <p>Enter your Email ID: </p><input id="emailid"><br>
+   <p>Enter your Conatct Number: </p> <input id="ContactNumber"><br>
+   <p>Enter your Date Of Birth: </p> <input id="Dateofbirth"><br>
+   <p>Enter your Qualifications: </p> <input id="Qualification"><br>
+   <p>Enter your Years Of Experience: </p><input id="Experience"><br>
+   <p>What do you call yourself as? (By Skill):</p><input id="Work">
     <br> <br>
     <button onclick="myFunction()"> Submit</button>
-    <p>Portfolio Maker</p> 
-    <h1 id="message"></h1> <br> <br>
-    <h1 id="message2"></h1>
+     
+    <h2 id="message"></h2>  
+    <h2 id="message2"></h2><br>
+    <h2 id="message3"></h2><br>
+    <h2 id="message4"></h2><br>
+    <h2 id="message5"></h2><br>
+    <h2 id="message6"></h2><br>
+    <h2 id="message7"></h2>
+
     <style>
         body{background-color: darkorchid; text-align: center;color: floralwhite;}
     </style>
@@ -22,13 +34,27 @@
     <script>
         function myFunction(){
             let name = document.querySelector("#name"); 
-            
+            let emailid = document.querySelector("#email id"); 
+            let ContactNumber = document.querySelector("#Contact Number"); 
+            let Dateofbirth = document.querySelector("#Date of birth"); 
+            let Qualifications = document.querySelector("#Qualifications"); 
+            let Experience = document.querySelector("#Experience"); 
+            let Work = document.querySelector("#Work");
             let message = document.querySelector("#message");
             let message2 = document.querySelector("#message2");
+            let message3 = document.querySelector("#message3");
+            let message4 = document.querySelector("#message4");
+            let message5 = document.querySelector("#message5");
+            let message6 = document.querySelector("#message6");
 
+            document.getElementById("name").innerHTML = name;
+            message.innerHTML = "Hello, My name is" + " " + name.value;
+            message2.innerHTML = "I am a " + " " + Work.value;
+            message3.innerHTML = "Date of birth" + " " + Dateofbirth.value;
+            message4.innerHTML = "Educational Qualification" + " " + Qualifications.value;
+            message5.innerHTML = "Portfolio Maker" + "\n " + name.value;
+            message6.innerHTML = "Portfolio Maker" + "\n " + name.value;
 
-            message.innerHTML = "Portfolio Maker" + "\n " + name.value;
-            message2.innerHTML = "Portfolio Maker" + "\n " + name.value;
 
         }
 
